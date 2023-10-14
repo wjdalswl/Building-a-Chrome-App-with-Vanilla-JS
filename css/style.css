@@ -1,3 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Playfair+Display:ital,wght@1,400;1,800&display=swap');
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    height: 100vh;
+    width: 100%;
+    flex-direction:column;
+    color: white;
+}
+body:not(#weather) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hidden {
     display: none;
+}
+
+#clock {
+    font-size: 100px;
+    line-height: 1;
+    margin: 0px 0 20px 0;
+    padding-top: 0px;
+}
+
+#greeting {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    opacity: 0.5;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+input[type="submit"] {
+    border-bottom: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.delete-button {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 1px 5px;
+    margin-left: 5px;
+  }
+
+#quote {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+#quote span:first-child {
+    margin-bottom: 2px;
+}
+#quote span:nth-child(2) {
+    font-size: 10px;
+}
+
+#weather {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 10px;
 }
